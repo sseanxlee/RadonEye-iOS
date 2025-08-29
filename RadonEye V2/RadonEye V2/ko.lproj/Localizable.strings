@@ -1,0 +1,260 @@
+/* 
+  File.strings
+  RadonEye V2
+
+  Created by jung sukhwan on 2019/12/05.
+  Copyright © 2019 jung sukhwan. All rights reserved.
+*/
+ble_off_title = "Bluetooth is porewed off";
+ble_off_msg = "You must turn on Bluetooth in Settings in order to use RadonEye";
+
+app_name = "RadonEye";
+app_version = "0.9.0";
+app_date = "(2019.11.28)";
+
+action_settings = "Settings";
+
+str_permission = "It is available after you approve of authority for use.";
+
+bluetooth_disabled_title = "BLUETOOTH DISABLED";
+bluetooth_disabled_info = "The Bluetooth adapter is turned off. Click the button below to enable it.";
+bluetooth_disabled_action = "Enable";
+
+rd200_guide_title = "CAN\'T SEE YOUR RadonEye?";
+rd200_guide_info = "1. Turn RadonEye off and on.\n2. Please run the application near the RadonEye.";
+rd200_guide_location_info = "3. Location is turned off. Some Android phones require it enabled in order to scan for Bluetooth LE devices.\nIf you are sure your RadonEye is advertising and it doesn't show up here, click the button below to enable Location.";
+rd200_guide_location_action = ">Enable";
+
+filesave_complete = "Completed save file";
+warning = "Warning";
+wait = "Waiting..";
+scan_wait = "Find device. Please wait.";
+ok = "OK";
+update = "Update";
+cancel = "Cancel";
+clear = "Reset Data";
+close = "Close";
+yes = "Yes";
+no = "No";
+connection_ok = "Connecting success";
+connection_fail = "Connection failed. Please try again.";
+save = "Save";
+save_and_share = "Save an share";
+no_data = "There is no saved log data because the measurement time is less than 1 hour.\nThe log data is saved in the unit of measurement time of one hour.";
+no_data_dataload = "No data. Please data load";
+data_clear = "\nAll data in the device\nwill be deleted.\n\nDo you want to save the data\nbefore resetting?\n";
+data_clear_failed = "Failed data clear. Please try again.";
+
+invalid_input = "Invalid input";
+factor_value_error = "Please enter a value between 0.5 ~ 1.5";
+arning_value_error = "Please enter a value between 1.1 ~ 100";
+warning_value_error1 = "Please enter a value between 1 ~ 3700";
+warning_demical_error = "Please enter a value between 1.1 ~ 100";
+
+saveFileNone = "No saved files";
+btnBackFileView = "if you want to exit, Press back button one more.";
+btnBackFinish = "Exit Smart Radon Checker.";
+ble_not_supported = "BLE is not supported";
+abel_data = "Data:";
+label_device_address = "Device address:";
+label_device_name = " Device_name";
+label_file_save = "File_Save";
+label_time = "Time:";
+label_msg = "MSG:";
+msg_connecting = "Connection and Initialize..";
+msg_connect = "Connected";
+msg_disconnect = "Disconnected";
+label_disconn = "Disconnected \nPlease try again.";
+
+unit = "Unit";
+reset = "Reset";
+
+unit_bq = "Bq/m³";
+unit_pico = "pCi/ℓ";
+
+just_now = "just now";
+minute_ago = "minute ago";
+hour_ago = "hour ago";
+seconds_ago = "seconds ago";
+minutes_ago = "minutes ago";
+hours_ago = "hours ago";
+
+error_bluetooth_not_supported = "Bluetooth not supported.";
+title_activity_detail_view = "DetailView";
+
+log_down_comp = "Log data Download Complete";
+log_down_comp_data2 = "Log data download completed.\nThe graph should be drawn at least 2 log data (2 hours of measurement time).";
+
+log_waiting = "Preparing to download log data. Please wait a moment.";
+log_waiting_error = "Failed download log data. Please try again.";
+
+detail_warning_popup_title = "  Warning!!";
+detail_warning_popup = "   Open the window for ventilation";
+detail_meastime_title = "Measurement Time (hh:mm) ";
+detail_setting_alarm_info = "Please click ALARM SET\nwhen setting is completed";
+
+log_down_error_check = "Log data has been shut down during download. Please wait while this is initializing. It can take up to 2 minutes.";
+
+log_max_msg_title = "Notice";
+log_max_msg = "The log data stored in the RadonEye can be up to 1 year. For normal measurement, please clear the log data of the equipment and initialize it. If necessary, download the log data of the device to mobile before storing it separately.";
+
+ble_fail = "Radoneye connection failed. Go to the main screen and try to connect again.";
+
+dfu_button = "Update";
+dfu_info_title = "RadonEye Firmware Update";
+dfu_alert_msg = "[Notice]\n1.When you click the 'Update' button below, the RadonEye screen will show 'DFU Mode' and the application will close.\n2.After the application is terminated, restart the application within 2 minutes and click 'F/W updaate device' as shown above to automatically update the firmware.";
+dfu_info = "\n\nFirmware update:V1.2.4\n-Error message on radonEye Display(ERR/OVER)";
+dfu_notice_check = "Have you checked the firmware update notice?";
+
+dfu_start = "F/W Update start";
+dfu_init = "Initializing.. Please wait.";
+dfu_error = "F/W update error. Please try again";
+dfu_finish = "F/W update success";
+dfu_finish_msg = "F/W update success. Please wait.";
+dfu_uploading_percentage = "%d%%";
+dfu_ui_msg = "It switches to update mode and displays DFU MODE on the display\n\nIf the update fails, turn the device off and on again, then try to restart the app.\n\nUpdate is complete, power off and on the RadonEye for the desired action.";
+dfu_ble_init = "Bluetooth is being initialized. Please wait.";
+dfu_msg_view = "Do not show this message again";
+
+file_open_error = "his is not a normal log file. Please check the log file and try again.";
+file_rd200p_open = "RadonEye Plus data. Please open it in RadonEye Plus application.";
+
+meas_time_10min = "The radon value is displayed after 10 minutes of measuring time.";
+
+state_scanning = "Scanning…";
+state_connecting = "Connecting…";
+state_discovering_services = "Discovering services…";
+state_initializing = "Initializing…";
+state_discovering_services_completed = "%s ready";
+tate_not_supported = "Device does not have required services.";
+state_disconnected = "Device disconnected.";
+
+file_load_title = "List of saved log files";
+
+company = "Ecosense";
+title_device_list = "Device List";
+title_settings = "Settings";
+title_saved_log_data = "Saved Log Data";
+title_find = "Find a Professional";
+title_get_help = "Get Help";
+title_about_us = "About Us";
+
+home_connection_fail_title = "Failed to Connect";
+home_connection_fail_msg = "Do you want to search your device from the device list?";
+
+version = "version";
+measeruing = "Measuring";
+enable = "ENABLE";
+location_disabled = "Location disabled.";
+more = "MORE";
+radon_level = "Radon Level";
+status_good = "Good";
+status_normal = "Moderate";
+status_warning = "Not\ngood";
+status_bad = "Action\nrequired";
+details = "Details";
+
+peak_value = "Peak Value";
+day1_value = "1-day Average";
+day30_value = "30-day Average";
+meas_time = "Measurement Time";
+
+radon_data = "Radon data";
+radon_data_chart_sync_just = "Just Now";
+radon_data_chart_sync_ago = "Last synced %dmin ago";
+radon_data_save_success_title = "Success!";
+radon_data_save_success_msg = "Do you want to open the data?";
+
+data = "Data";
+reset_data = "Reset Data";
+
+unit_setting_title = "Unit Setting";
+alarm_setting_title = "Alarm Setting";
+alarm_setting = "Alarm";
+alarm_setting_value = "Alarm Value";
+alarm_setting_interval = "Alarm Interval";
+
+unit_setting = "Unit Setting";
+unit_setting_ok = "Unit setting success";
+unit_setting_fail = "Failed Unit setting. Please try again.";
+
+alarm_setting_ok = "Alarm setting success";
+alarm_setting_fail = "Failed alarm setting. Please try again.";
+
+setting_alarm_value_pci = "Please enter a value between 0.1 ~ 270";
+setting_alarm_value_bq = "Please enter a value between 1 ~ 9999";
+
+log_data_no_data = "There is no saved log data because the measurement time is less than 1 hour.\nData storage interval is 1 hour.";
+log_data_1hour = "The graph should be drawn at least 2 log data (2 hours of measurement time)";
+chart_information = "Data Information";
+chart_bottom_text = "(# of data points)";
+save_current_log_data = "Save Current Log Data";
+chart_refresh_click = "Click to refresh";
+
+
+data_number = "# of data points";
+data_details = "Data Details";
+file_name = "File Name";
+serial_number = "Serial Number";
+
+
+file_delete = "Delete";
+file_delete_msg = "Are you sure you want to delete the data?";
+of_data_point = "# of data point";
+average = "Average";
+max = "Max";
+min = "Min";
+
+help_quick_guide = "• RadonEye Quick Guide";
+help_faq = "• Frequently Asked Questions";
+help_get_in_us = "• Contact Us";
+help_email_title = "Email";
+help_email_alert_title  = "Support";
+help_email_alert_msg  = "Please email us at";
+
+support_name = "Ecosense.io";
+support_homepage = "https://ecosense.io";
+support_menu_email = "support@ecosense.io";
+support_menu_email_marmketting = "marketing@ecosense.io";
+support_menu_time = "510-304-5531\nHours: 9AM-5PM PST, Mon - Fri";
+support_menu_copy1 = "©%@ Ecosense, Inc. All rights reserved";
+support_menu_copy2 = "Privacy policy";
+support_menu_copy3 = "and";
+support_menu_copy4 = "terms of use";
+about_us_content_title = "WHO ARE WE";
+about_us_content = "Ecosense is an innovator in the radon monitoring industry providing people peace of mind through its intelligent and highly accurate radon detectors for homes, educational campuses, assisted living centers, community centers and commercial buildings. The company's smart real-time radon monitors integrate a patented high accuracy ion chamber detection technology together with state-of-art analysis and processing software capable of delivering the first accurate radon result in minutes not days.\n\nEcosense is based in the heart of Silicon Valley, California.";
+about_us_title1 = "Ecosense, Inc. (USA)";
+about_us_title2 = "Customer support:";
+about_us_title3 = "Referral program:";
+about_us_link = "https://ecosense.io/pages/about-us-1";
+
+dfu_title = "라돈아이 펌웨어 업데이트";
+dfu_frist_msg = "라돈아이 신규 펌웨어로 업데이트가 가능합니다.\n업데이트 버튼을 눌러 설명을 확인하고 업데이트를 진행해 주세요.";
+dfu_enable = "펌웨어 업데이트 모드로 전환되며 라돈아이 화면이 DFU로 표시되면서 측정이 종료됩니다.\n설정-블루투스로 가셔서 불루투스의 전원을 껐다가 켜주셔야 정상적으로 업데이트 진행이 가능합니다.\n\n<펌웨어 업데이트:V.1.2.4>\n-라돈아이 디스플레이에 에러 메세지 표시(ERR/OVER) ";
+
+dfu_info = "펌웨어 업데이트 모드로 전환되며 라돈아이 화면이 DFU로 표시되면서 측정이 종료됩니다. 설정-블루투스로 가셔서 불루투스의 전원을 껐다가 켜주셔야 정상적으로 업데이트 진행이 가능합니다.";
+dfu_content = "업데이트 중에는 장비를 끄지 마세요.";
+dfu_start = "업데이트 시작";
+dfu_error_title = "펌웨어 업데이트 에러";
+dfu_error = "확인 버튼을 클릭하면 설정-블루투스로 이동합니다. 블루투스의 전원을 껐다가 다시 키고 업데이트를 다시 시도해 주세요.";
+dfu_finish = "업데이트 성공";
+dfu_finish_contnet = "펌웨어 업데이트가 완료되었습니다. 확인버튼 클릭 시, 블루투스 설정으로 이동되며, 불루투스의 전원을 껐다가 켜주셔야 정상적으로 라돈아이 접속이 가능합니다.";
+
+
+radon_range_info = "The average, lower, and upper levels of 95% confidence interval based on the last 1 hour measurement with 6 data points.";
+
+resetdata_no_data = "No data to erase";
+data_clear_yes = "Yes, I want to save data";
+data_clear_no = "No, Proceed reset data";
+
+
+device_setting = "Device setting";
+device_setting_ok = "Device setting success";
+device_setting_fail = "Failed Device setting. Please try again.";
+
+
+get_help_canada_title = "For Customers Outside the U.S. and\nCanada";
+get_help_europe_title = "• Europe";
+get_help_europe_content = "For support, contact your local distributor, Ecosense Support at support@ecosense.io, or\nRadonTec at support@radontec.de.";
+get_help_other_title = "• Other Global Regions";
+get_help_other_content = "For all other international regions, reach out to your local distributor or contact Ecosense Support at support@ecosense.io.";

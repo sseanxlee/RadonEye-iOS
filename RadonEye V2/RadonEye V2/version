@@ -1,0 +1,496 @@
+[2019.12.17] V0.8.0 - 1
+1. 1차 버전 업데이트
+
+
+
+[2020.01.xz]
+1. Alarm Interval 아이콘 추가
+2. Alarm value 텍스트 파일에 저장, 차트에 표현
+3. 메뉴
+ (1) 상단 라돈아이 아이콘 표시
+ (2) Find a professioanl 링크 추가
+  -UIApplication.shared.open((URL(string: "http://ecosense.io"))!킁
+4. Device List
+ (1) 리스트 선택한 인덱스로 접속 시도
+   -기존에는 0번째 인덱스로만 접속 시도
+ (2) 아이템 높이 60으로 고정
+5. Saved File List
+ (1) 아이템 높이 고정(60)
+   -고정 안하면 delete 아이콘이 아이템 row를 벗어남
+ (2)) viewMain 만들어 그 안에 tableview 생성
+   -superview에 만들면 위에 탭바 높이때문에 계산해야 함
+ (3) 폴더 내에 파일 없을때 표시 안함
+6. Saved File Load
+ (1) pic단위 표시 수정
+ (2) data no 라벨 표시 오류 수정
+7. Monitroing
+ (1) flagBleConnect 추가
+   -BLE 연결 상태 판단/Users/jungsukhwan/Downloads/RadonEye_Quick_Guide.pdf
+   -false면 alert화면 표시
+   -BLE 명렁어 전송 불가
+ (2) Sync
+   -연결 시엔 Connected
+   -연결 문제되면 Disconneted, 1분마다 Last sync 표시
+ (3) Device List로 가면 마지막 장비 정보 지워짐
+8. Get Help 디자인 수정
+9. About Us 디자인 수정
+10. 세로 화면 고정
+   -AppDelegate.swift 에 추가
+   
+   
+String 추가
+support_homepage = "https://ecosense.io";
+support_menu_email_marmketting = "marketing@ecosense.io";
+about_us_content = "Ecosense is a Silicon Valley based company providing and supporting the family of high accuracy, real-time radon detectors for professional home inspectors, radon mitigators, and general consumers. Our mission is to deliver the best radon detector by leveraging US patented ionized chamber technologies and to become a part of your safer and smarter home.";
+
+
+
+
+[2020.01.21]
+1. Save Lod data
+ -ScrollView로 수정
+ -일부 기기에서 하단 짤림
+ 
+2. Monitor
+ (1) 로그다운로드 응답 없을때
+  -에러 메세지 보임
+  -전송 후 10초 후에 BLEData.Log.recPercen 증가했는지로 판단
+ (2) Disconected
+  -탭을 옮겨도 표시 유지
+  
+3. Setting
+ (1) Alarma Value
+  -키보드가 가릴경우 높이 판단하여 화면 위로 올림
+  -Toolbar 추가하여 done/cancel 추가
+  -값 입력 안했을때 에러 메세지 표시
+ (2) Reset Data 기능 추가
+ 
+ 4. About Us
+ (1) 스크롤바 수정
+ 
+4. Side menu
+ (1) 상단 네비게이션 바 안보이게 설정(스토리보드)
+ 
+
+String 추가
+log_waiting = "Preparing to download log data. Please wait a moment.";//원본
+log_waiting_error = "Failed ownload log data. Please try again.";
+
+setting_alarm_value_pci = "Please enter a value between 1 ~ 270";
+setting_alarm_value_bq = "Please enter a value between 37 ~ 9999";
+
+warning = "Warning";
+wait = "Waiting..";//원본
+
+clear = "Reset Data";
+
+
+
+[2020.01.30]
+Version : V0.8.3
+Build : 6
+1. Monitor
+ (1) 초기 Measuring 오타 수정
+   -Measuering -> Measuring
+ (2) 로그 데이터 다운
+   -flagLogClick 생성하여 중복 클릭 방지
+ (3) 로그 데이터가 있으면 차트 대신 라벨 표시 하여 리프레시 아이콘 클릭 유도
+   -차트 대신 Click to refresh 문구 표시
+ (4) Tab 종료 될때 removeObserver 실행
+   -중복되면 로그데이터 다운 및 저장이 계속 누적
+2. About us 폰트 수정
+  -17->13
+
+String 추가
+chart_refresh_click = "Click to refresh";
+String 수정
+home_connection_fail_msg = "Do you want to search your device from the device list?";
+
+
+
+[2020.02.06]
+Version : V0.8.4
+Build : 7
+
+1. About Us
+ (1) 링크 수정
+  -https://ecosense.io - > https://ecosense.io/pages/about-us
+  
+2. Saved File Open
+ (1) fileOpenProcess 시 sections.removeAll() 추가
+  -파일 삭제 시, sections 초기화 안하고 누적됨
+  
+3. Monitor
+ (1) Data 탭에서 Click to refresh 클릭 시, 로그 다운로드 진행
+ 
+4. About Us / Get Help
+ (1) 하단 라벨 분리/링크 추가
+ 
+5. Firebase 추가
+
+String 추가
+about_us_link = "https://ecosense.io/pages/about-us";
+
+
+
+[2020.02.07]
+version : 1.0.0
+build : 8
+
+1. 정식버전
+2. root=bluetooth 삭제
+
+
+
+[2020.02.10]
+version : 0.9.0
+build : 9
+
+1. Main
+ (1) 스캔 실패 타이머 위치 변경
+  -view load 시 timerDeviceCheck 실행
+ (2) BLUE OFF 메세지 수정
+  -Bluetooth is porewed off -> Bluetooth is off
+  
+2. Monitor
+ (1) 측정시간
+  -day -> d 수정
+  -hr -> h변경
+  -폰트 24로 다른 글씨와 동일
+
+3. 런처 이미지 변경
+
+
+[2020.02.12]
+version : 1.0.0
+build : 10
+
+1.정식 버전
+
+
+[2020.02.12]
+version : 1.0.0
+build : 11
+
+1.About us
+ (1) 로고 이미지 변경
+  -기존은 하단 짤림
+  
+2.Get help
+ (1) footer 링크 변경
+  -UIApplication.shared.open((URL(string: "about_us_link".localized))!)
+
+3. Monitor
+ (1) Scan Timer
+  -접속 끝나면 timer 종료 (스캔용이기때문에 접속하면 종료해도됨)
+ (2) notification viewWillAppear 처리
+  -viewLoad에서 처리하면 setting 갔다 온 후에 불가
+
+
+
+[2020.03.12]
+version : 1.0.1
+build : 12
+
+1. Progress bar 색상 변경
+-white 추가
+let activityView = UIActivityIndicatorView(style: UIActivityIndicatorView.Style.large)
+activityView.color = .white
+
+
+2. Monitor
+ (1) Info 버튼 추가
+  -불확정 범위 추가
+  -팝업으로 표시
+  
+3. Menu
+ (1) Find -> Referral Program 메뉴 변경
+ 
+4. Chart Info
+ (1) Monitor -Data
+ (2) FileView
+ -팝업 위치 중앙으로 이동
+ 
+5. 파일 공유 수정
+ -아이패드에서 위치 강제 지정 필요
+sender: UIBarButtonItem
+
+activityVC.excludedActivityTypes = [
+    UIActivity.ActivityType.print,
+    UIActivity.ActivityType.addToReadingList
+]
+// Check if user is on iPad and present popover
+if UIDevice.current.userInterfaceIdiom == .pad {
+  if activityVC.responds(to: #selector(getter: UIViewController.popoverPresentationController)) {
+      activityVC.popoverPresentationController?.sourceView = self.view
+      activityVC.popoverPresentationController?.sourceRect = CGRect(x: self.view.bounds.midX, y: self.view.bounds.midY, width: 0, height: 0)
+      activityVC.popoverPresentationController?.permittedArrowDirections = []
+  }
+}
+
+6. File List
+ (1) table width = self.view 로 수정
+  -기존은 viewMain으로 되어 있어서 아이패드에서 길이가 짤림
+
+
+
+[2020.03.16]
+version : 1.0.2
+build : 13
+
+1. Monitor
+ -아이콘 삭제된거 수정
+
+
+
+[2020.05.11]
+version : 1.0.3
+build : 14
+
+1. Radon status 단위 / 색상 / 문구 변경
+ -No Action Required < 2.7
+ -Concerned 2.7 <= < 4
+ -Action Required >= 4
+ 
+2. Radon range 팝업창 디자인 변경
+ 
+ 
+ 
+[2020.05.19]
+version : 1.0.3
+build : 15
+
+1. Radon Range 팝업창 크기 조정
+
+
+
+[2020.06.01]
+version : 1.0.4
+build : 16
+
+1. Referral 링크 변경
+ //UIApplication.shared.open((URL(string: "https://ecosense.io/pages/ecosense-referral-program-1"))!)
+ UIApplication.shared.open((URL(string: "https://ecosense.io/pages/ecosense-referral-club"))!)
+
+
+
+[2020.07.20]
+version : 1.0.5
+build : 17
+
+1. 오타 수정
+ Frimware version --> Firmware version
+
+
+
+[2020.10.20]
+version : 1.0.6
+build : 18
+
+1. Setting
+-폰트 클 경우 하단 짤림
+-스크롤뷰 대체
+
+2. Log Data View
+ (1) 스크롤 뷰 변경
+   -스크롤뷰 동작 안함
+   -Hieght 삭제하고 맨 마지막 아이템 bottom에 연결
+   
+3. Quick Guild 수정
+
+
+
+[2021.06.15]
+version : 1.0.7
+build : 19
+
+1. Monitor / Data / Setting
+ -라인 표시 위해서 0.2후에 실행
+ 
+2. Saved Log Data
+ -TableView 높이를 view 높이로
+ -기존은 cell 높이라서 높은값이 세팅되어 있음
+ 
+ 
+ 
+[2021.06.17]
+version : 1.0.8
+build : 20
+
+1. 펌웨어 업데이트 하라고 팝업이 항상 뜨는 문제 수정
+
+
+
+[2021.06.17]
+version : 1.1.0
+build : 21
+
+1. 펌웨어 업데이트 하라고 팝업이 항상 뜨는 문제 수정
+2. V1.2.4로 변경
+
+
+[2021.06.17]
+version : 1.1.1
+build : 23
+
+1. 테스트플라잇에 버전만 변경해서 업로드
+
+
+[2021.06.17]
+version : 1.1.1
+build : 24
+
+1. 메뉴얼(pdf) 변경
+
+
+[2021.07.xx]
+version : 1.2.0
+build : 25
+
+1. 뉴 라돈아이 기능 추가
+
+2. 기존 라돈아이 Bq 변환 시, 소수점 버림
+ -펌웨어에서 소수점 버림으로 처리
+ 
+3. Data
+ (1) 로그 데이터 다운로드
+  -데이터가 없는 경우에 에러 팝업이 발생
+  -기존 : if BLEData.Log.recPercent == 0
+  -변경 : if BLEData.Log.recPercent == 0 && BLEData.Log.dataNo > 0
+ 
+4. 로그 데이터 저장
+ -현재 받아온 로그데이터 길이로 판단 (그래프에 보여진 데이터)
+ -받아온 시점에서 시간이 지나서 로그 데이터가 1개 더 추가되면 파일 저장 시 로그 데이터 넘버로 계산하면 에러 발생
+ 
+5. Setting
+ (1) Reset
+  -Reset -> Erase 변경
+ (2) Reset 시, 팝업 변경
+  -EcoTracker와 동일
+  -데이터 다운로드 하고 저장할건지, 아니면 저장 없이 삭제할건지 물어보는 팝업
+ (3) Done 클릭 이벤트 시, 단위/알람 변경 적용
+  -EcoTracker와 동일
+  -변경내용 없으면 바로 화면 닫음
+  -유닛 / 알람 변경 있으면 순차적으로 진행 후에 화면 닫음
+ (4) Alarm value 판단 추가
+  -String 변수 만들어서 done클릭 시 변화 있는지 판단
+  -Bq <-> pCi 단위 환산 및 소수점 때문에 사용자가 수정안했는데 세팅 되는 경우 발생 (10Bq / pCi 세팅일 경우)
+ 
+ 
+[2021.10.06]
+version : 1.2.0
+build : 26
+
+1. Monitor
+ (1) peak / 1day 값 단위 변경
+  -값이 표시 안되어서 유닛 변경 시 적용되도록 수정
+
+2. Setting
+  (1) Erase all data
+   -퍼센트 표시되도록 수정
+   
+   
+    
+[2022.01.13]
+version : 1.2.0
+build : 27
+
+1. Info
+ -BLE 관련 항목 상세 설명 추가
+ -Our app uses bluetooth to find, connect, monitor data and change settings on your 'RadonEye'
+
+
+version : 1.2.0
+build : 28
+
+1. Chart
+ -Alram value 라인 ESP32 버전도 적용
+
+
+version : 1.3.0
+build : 29
+-2022.10.04
+
+1. RadonEye V3 지원
+-시리얼 번호 형태 변경
+-4자리 + RE + 6자리
+-시리얼 번호 받아오는 부분만 V2랑 다르고 나머진 전부 동일
+
+2. Monitor
+-측정시간 폰트 사이즈 통일 (라돈 값 폰트 사이즈와 동일)
+ 24 -> 22,  17 -> 14
+
+
+
+version: 1.3.0
+build: 31
+-2022.12.22
+
+1. Club LINK
+2. About Us / Get Help Link
+3. 2020 -> 2022
+
+
+
+
+version: 1.4.0
+build: 32
+-2023.10.26
+
+1. pod 재설치
+
+2. Menu - 어플 버전 정보 삭제
+
+3. Radon Eye / radon eye -> RadonEye 문구 변경
+
+4. Change copyright 2022 → 2023
+
+5. Change link “RadonEye Quick Guide” → https://link.ecosense.io/rd200-guide
+-기존에는 코드에서 pdf 파일 로드
+
+6. Frequently Asked Questions → https://ecosense.io/pages/rd200-faq-en
+-기존 : https://ecosense.io/pages/faq
+
+7. About Us
+●    Change logo (attached)
+●    Purchase, customer support → Customer support
+●    Delete Referral program and email
+●    Change 2022 → 2023 copyright
+●    Add “WHO ARE WE” (bold) and change the text to bold
+
+8. 1-day Average, 30-day Average, Peak Value, Measurement Time, Alarm Value, Alarm Inteval, Alarm Setting, Data Information, Just Now
+
+
+
+
+
+version: 1.5.0
+build: 33
+-2024.07.23
+1. pods 정리
+-IOSDFU, firebase 삭제
+-노르딕 DFU 관련 삭제(컨트롤러)
+
+2. 신규 펌웨어 (3.0.2) 대응
+-pCi일때 최소값을 0.2로 표시
+
+
+[2024.10.10]
+1. Referral Program 메뉴 삭제
+-안드로이드 버전은 이미 삭제
+-EcoTrakcer에만 있어야 함
+
+2. Get Help / About Us
+-연도를 강제로 입력해서 보여줘서 연도가 바뀔때마다 문제됨
+-현재 연도 가져와서 표시
+
+
+[2024.12.30]
+-TestFlight 배포
+
+
+version: 1.5.1
+build: 34
+[2025.05.22]
+1. Get help
+-안내 문구 수정 (에코센스)

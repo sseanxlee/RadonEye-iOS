@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--ViewPDF-->
+        <scene sceneID="GO6-87-8aO">
+            <objects>
+                <viewController storyboardIdentifier="viewPDF" id="Eer-Sl-Ekj" customClass="viewPDF" customModule="RadonEye_V2" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="fRr-Bb-7x1"/>
+                        <viewControllerLayoutGuide type="bottom" id="cAf-hb-vjr"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="j4w-GM-k0f">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WnY-1V-XnM">
+                                <rect key="frame" x="20" y="52" width="374" height="810"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="cAf-hb-vjr" firstAttribute="top" secondItem="WnY-1V-XnM" secondAttribute="bottom" id="Iks-Wd-F3r"/>
+                            <constraint firstItem="WnY-1V-XnM" firstAttribute="top" secondItem="fRr-Bb-7x1" secondAttribute="bottom" constant="8" symbolic="YES" id="K0Q-m6-B54"/>
+                            <constraint firstItem="WnY-1V-XnM" firstAttribute="leading" secondItem="j4w-GM-k0f" secondAttribute="leading" constant="20" symbolic="YES" id="YP4-c2-G4l"/>
+                            <constraint firstAttribute="trailing" secondItem="WnY-1V-XnM" secondAttribute="trailing" constant="20" symbolic="YES" id="ag8-KY-qlk"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="pdfView" destination="WnY-1V-XnM" id="Ytj-UV-bwh"/>
+                        <outlet property="pdfViewer" destination="WnY-1V-XnM" id="LSj-hE-esJ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="476-Op-6L7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-784" y="-42"/>
+        </scene>
+    </scenes>
+</document>

@@ -1,0 +1,1107 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 70;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		251F47572E131EE200AB99BD /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 251F47542E131EE200AB99BD /* WelcomeView.swift */; };
+		251F47592E1327A400AB99BD /* NewMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 251F47582E1327A400AB99BD /* NewMainView.swift */; };
+		251F475B2E132AC800AB99BD /* RadonMonitorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 251F475A2E132AC800AB99BD /* RadonMonitorView.swift */; };
+		251F47602E1DCAEB00AB99BD /* DeviceListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 251F475E2E1DCAEB00AB99BD /* DeviceListView.swift */; };
+		251F47612E1DCAEB00AB99BD /* MonitoringView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 251F475F2E1DCAEB00AB99BD /* MonitoringView.swift */; };
+		251F47632E1E21DC00AB99BD /* DeviceNameManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 251F47622E1E21DC00AB99BD /* DeviceNameManager.swift */; };
+		251F47662E1F528600AB99BD /* DGCharts in Frameworks */ = {isa = PBXBuildFile; productRef = 251F47652E1F528600AB99BD /* DGCharts */; };
+		2D04204A24639443002B1EC1 /* PopupRadonLevel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D04204924639443002B1EC1 /* PopupRadonLevel.swift */; };
+		2D04204E24639490002B1EC1 /* UILabelExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D04204D24639490002B1EC1 /* UILabelExtensions.swift */; };
+		2D042050246394E3002B1EC1 /* UiConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D04204F246394E3002B1EC1 /* UiConstants.swift */; };
+		2D0420522463954C002B1EC1 /* UIButtonExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D0420512463954C002B1EC1 /* UIButtonExtensions.swift */; };
+		2D04205424639EF7002B1EC1 /* RulerHorizontalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D04205324639EF7002B1EC1 /* RulerHorizontalView.swift */; };
+		2D15682026C2434700C46052 /* RadonEye_Quick_Guide.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 2D15681F26C2434700C46052 /* RadonEye_Quick_Guide.pdf */; };
+		2D1BDB0F26AF8586007A73E7 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2D1BDB0E26AF8586007A73E7 /* GoogleService-Info.plist */; };
+		2D2E5BA723A3680D004971B2 /* Menu.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D2E5BA623A3680D004971B2 /* Menu.storyboard */; };
+		2D2E5BAC23A36FD7004971B2 /* viewAboutUs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D2E5BAB23A36FD7004971B2 /* viewAboutUs.swift */; };
+		2D3DEC8D239A350D00DFCC2A /* BalloonMarker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D3DEC8C239A350D00DFCC2A /* BalloonMarker.swift */; };
+		2D3DEC8F239A352C00DFCC2A /* chartsControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D3DEC8E239A352C00DFCC2A /* chartsControl.swift */; };
+		2D3DEC91239A4EAC00DFCC2A /* viewLanch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D3DEC90239A4EAC00DFCC2A /* viewLanch.swift */; };
+		2D4124AD23EBEF12009F0A74 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D4124AF23EBEF12009F0A74 /* Launch Screen.storyboard */; };
+		2D432B8723A719E300028DD0 /* viewTabTop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D432B8623A719E300028DD0 /* viewTabTop.swift */; };
+		2D432BB423A8A06A00028DD0 /* viewGetHelp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D432BB323A8A06A00028DD0 /* viewGetHelp.swift */; };
+		2D432BB923A8CFB800028DD0 /* version in Resources */ = {isa = PBXBuildFile; fileRef = 2D432BB823A8CFB800028DD0 /* version */; };
+		2D486A8723C5928D005624F5 /* viewPDF.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D486A8623C5928D005624F5 /* viewPDF.swift */; };
+		2D48765A288A2E5100E3591C /* RadonEyeV3.bin in Resources */ = {isa = PBXBuildFile; fileRef = 2D487659288A2E5100E3591C /* RadonEyeV3.bin */; };
+		2D5E8AD4239888E00008E8C4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D5E8AD3239888E00008E8C4 /* AppDelegate.swift */; };
+		2D5E8AD6239888E00008E8C4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D5E8AD5239888E00008E8C4 /* SceneDelegate.swift */; };
+		2D5E8AD8239888E00008E8C4 /* viewDeviceList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D5E8AD7239888E00008E8C4 /* viewDeviceList.swift */; };
+		2D5E8ADB239888E00008E8C4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D5E8AD9239888E00008E8C4 /* Main.storyboard */; };
+		2D5E8ADD239888E30008E8C4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2D5E8ADC239888E30008E8C4 /* Assets.xcassets */; };
+		2D5E8AF6239888E40008E8C4 /* RadonEye_V2UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D5E8AF5239888E40008E8C4 /* RadonEye_V2UITests.swift */; };
+		2D5E8B0623988CE80008E8C4 /* BLECommnad.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D5E8B0523988CE80008E8C4 /* BLECommnad.swift */; };
+		2D5E8B0A23988D310008E8C4 /* NORScannedPeripheral.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D5E8B0923988D310008E8C4 /* NORScannedPeripheral.swift */; };
+		2D5E8B0C23988D490008E8C4 /* NORScannerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D5E8B0B23988D490008E8C4 /* NORScannerDelegate.swift */; };
+		2D5E8B0E23988D720008E8C4 /* BLEData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D5E8B0D23988D720008E8C4 /* BLEData.swift */; };
+		2D5E8B1023988D9D0008E8C4 /* BLEParse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D5E8B0F23988D9D0008E8C4 /* BLEParse.swift */; };
+		2D5E8B1223988DC20008E8C4 /* BLEControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D5E8B1123988DC20008E8C4 /* BLEControl.swift */; };
+		2D5E8B1523988DF40008E8C4 /* MyUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D5E8B1423988DF40008E8C4 /* MyUtil.swift */; };
+		2D5E8B18239896A80008E8C4 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2D5E8B1A239896A80008E8C4 /* Localizable.strings */; };
+		2D5E8B1F239897E50008E8C4 /* I18N.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D5E8B1E239897E50008E8C4 /* I18N.swift */; };
+		2D5E8B21239898740008E8C4 /* MyStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D5E8B20239898740008E8C4 /* MyStruct.swift */; };
+		2D5E8B2423989C3C0008E8C4 /* SdieMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D5E8B2323989C3C0008E8C4 /* SdieMenu.swift */; };
+		2D5E8B282398B5A40008E8C4 /* MenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D5E8B272398B5A40008E8C4 /* MenuController.swift */; };
+		2D5E8B2D2398B5FE0008E8C4 /* cellMainMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D5E8B2C2398B5FE0008E8C4 /* cellMainMenu.swift */; };
+		2D5E8B322398DE610008E8C4 /* LabelLocal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D5E8B312398DE610008E8C4 /* LabelLocal.swift */; };
+		2D5E8B372398E5920008E8C4 /* viewMonitorRadon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D5E8B362398E5920008E8C4 /* viewMonitorRadon.swift */; };
+		2D5E8B392398E5B10008E8C4 /* viewMonitorData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D5E8B382398E5B10008E8C4 /* viewMonitorData.swift */; };
+		2D5E8B3B2398E7470008E8C4 /* viewSetting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D5E8B3A2398E7470008E8C4 /* viewSetting.swift */; };
+		2D961D59239F2528002742EB /* viewSaveLogList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D961D58239F2527002742EB /* viewSaveLogList.swift */; };
+		2D961D5E239F5E29002742EB /* MyFileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D961D5D239F5E29002742EB /* MyFileManager.swift */; };
+		2D961D63239F7EE1002742EB /* viewSaveLogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D961D62239F7EE1002742EB /* viewSaveLogView.swift */; };
+		78595A5DBB0612BE3D1F7344 /* Pods_RadonEye_V2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF5B9E635A2AF173A89BA406 /* Pods_RadonEye_V2.framework */; };
+		7B0BC9CFF3D961D87C5E9D5D /* Pods_RadonEye_V2_RadonEye_V2UITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C588DC311EB86CF8ACB27D26 /* Pods_RadonEye_V2_RadonEye_V2UITests.framework */; };
+		ADE480572E4981980034E580 /* DeviceCategoryManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADE480562E4981980034E580 /* DeviceCategoryManager.swift */; };
+		ADE480592E4981A90034E580 /* CategoryManagementView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADE480582E4981A90034E580 /* CategoryManagementView.swift */; };
+		ADE4805B2E4D882B0034E580 /* SavedDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADE4805A2E4D882B0034E580 /* SavedDataManager.swift */; };
+		ADE480622E4EC43F0034E580 /* SavedDataSwiftUIChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADE480612E4EC43F0034E580 /* SavedDataSwiftUIChartView.swift */; };
+		ADE480632E4EC43F0034E580 /* SavedDataChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADE480602E4EC43F0034E580 /* SavedDataChartView.swift */; };
+		F89304E80CA8352BA7D3724B /* Pods_RadonEye_V2Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86C561F90554B015F090F9E4 /* Pods_RadonEye_V2Tests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2D5E8AE7239888E40008E8C4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2D5E8AC8239888E00008E8C4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2D5E8ACF239888E00008E8C4;
+			remoteInfo = "RadonEye V2";
+		};
+		2D5E8AF2239888E40008E8C4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2D5E8AC8239888E00008E8C4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2D5E8ACF239888E00008E8C4;
+			remoteInfo = "RadonEye V2";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		2D3DEC8A239A348F00DFCC2A /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		086AF64BC809632C40C37490 /* Pods-RadonEye V2Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RadonEye V2Tests.debug.xcconfig"; path = "Target Support Files/Pods-RadonEye V2Tests/Pods-RadonEye V2Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		0A2A6A3F70596C0C1256C492 /* Pods-RadonEye V2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RadonEye V2.debug.xcconfig"; path = "Target Support Files/Pods-RadonEye V2/Pods-RadonEye V2.debug.xcconfig"; sourceTree = "<group>"; };
+		251F47542E131EE200AB99BD /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
+		251F47582E1327A400AB99BD /* NewMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewMainView.swift; sourceTree = "<group>"; };
+		251F475A2E132AC800AB99BD /* RadonMonitorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadonMonitorView.swift; sourceTree = "<group>"; };
+		251F475E2E1DCAEB00AB99BD /* DeviceListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceListView.swift; sourceTree = "<group>"; };
+		251F475F2E1DCAEB00AB99BD /* MonitoringView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonitoringView.swift; sourceTree = "<group>"; };
+		251F47622E1E21DC00AB99BD /* DeviceNameManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceNameManager.swift; sourceTree = "<group>"; };
+		2D04204924639443002B1EC1 /* PopupRadonLevel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopupRadonLevel.swift; sourceTree = "<group>"; };
+		2D04204D24639490002B1EC1 /* UILabelExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UILabelExtensions.swift; sourceTree = "<group>"; };
+		2D04204F246394E3002B1EC1 /* UiConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UiConstants.swift; sourceTree = "<group>"; };
+		2D0420512463954C002B1EC1 /* UIButtonExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButtonExtensions.swift; sourceTree = "<group>"; };
+		2D04205324639EF7002B1EC1 /* RulerHorizontalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RulerHorizontalView.swift; sourceTree = "<group>"; };
+		2D15681F26C2434700C46052 /* RadonEye_Quick_Guide.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = RadonEye_Quick_Guide.pdf; path = ../../RadonEye_Quick_Guide.pdf; sourceTree = "<group>"; };
+		2D1BDB0E26AF8586007A73E7 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
+		2D2E5BA623A3680D004971B2 /* Menu.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Menu.storyboard; sourceTree = "<group>"; };
+		2D2E5BAB23A36FD7004971B2 /* viewAboutUs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = viewAboutUs.swift; sourceTree = "<group>"; };
+		2D3DEC8C239A350D00DFCC2A /* BalloonMarker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BalloonMarker.swift; sourceTree = "<group>"; };
+		2D3DEC8E239A352C00DFCC2A /* chartsControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = chartsControl.swift; sourceTree = "<group>"; };
+		2D3DEC90239A4EAC00DFCC2A /* viewLanch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = viewLanch.swift; sourceTree = "<group>"; };
+		2D4124AE23EBEF12009F0A74 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "Base.lproj/Launch Screen.storyboard"; sourceTree = "<group>"; };
+		2D4124B323EBEF30009F0A74 /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = "ko.lproj/Launch Screen.strings"; sourceTree = "<group>"; };
+		2D4124B523EBEF33009F0A74 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = "en.lproj/Launch Screen.strings"; sourceTree = "<group>"; };
+		2D432B8623A719E300028DD0 /* viewTabTop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = viewTabTop.swift; sourceTree = "<group>"; };
+		2D432BB323A8A06A00028DD0 /* viewGetHelp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = viewGetHelp.swift; sourceTree = "<group>"; };
+		2D432BB823A8CFB800028DD0 /* version */ = {isa = PBXFileReference; lastKnownFileType = text; path = version; sourceTree = "<group>"; };
+		2D486A8623C5928D005624F5 /* viewPDF.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = viewPDF.swift; sourceTree = "<group>"; };
+		2D487659288A2E5100E3591C /* RadonEyeV3.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; path = RadonEyeV3.bin; sourceTree = "<group>"; };
+		2D5E8AD0239888E00008E8C4 /* RadonEye V2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "RadonEye V2.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2D5E8AD3239888E00008E8C4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		2D5E8AD5239888E00008E8C4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		2D5E8AD7239888E00008E8C4 /* viewDeviceList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = viewDeviceList.swift; sourceTree = "<group>"; };
+		2D5E8ADA239888E00008E8C4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2D5E8ADC239888E30008E8C4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2D5E8AE1239888E30008E8C4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2D5E8AE6239888E40008E8C4 /* RadonEye V2Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "RadonEye V2Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2D5E8AF1239888E40008E8C4 /* RadonEye V2UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "RadonEye V2UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2D5E8AF5239888E40008E8C4 /* RadonEye_V2UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadonEye_V2UITests.swift; sourceTree = "<group>"; };
+		2D5E8AF7239888E40008E8C4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2D5E8B0523988CE80008E8C4 /* BLECommnad.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BLECommnad.swift; sourceTree = "<group>"; };
+		2D5E8B0923988D310008E8C4 /* NORScannedPeripheral.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NORScannedPeripheral.swift; sourceTree = "<group>"; };
+		2D5E8B0B23988D490008E8C4 /* NORScannerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NORScannerDelegate.swift; sourceTree = "<group>"; };
+		2D5E8B0D23988D720008E8C4 /* BLEData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BLEData.swift; sourceTree = "<group>"; };
+		2D5E8B0F23988D9D0008E8C4 /* BLEParse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BLEParse.swift; sourceTree = "<group>"; };
+		2D5E8B1123988DC20008E8C4 /* BLEControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BLEControl.swift; sourceTree = "<group>"; };
+		2D5E8B1423988DF40008E8C4 /* MyUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyUtil.swift; sourceTree = "<group>"; };
+		2D5E8B19239896A80008E8C4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		2D5E8B1B239896FB0008E8C4 /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/Main.strings; sourceTree = "<group>"; };
+		2D5E8B1D239896FB0008E8C4 /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/Localizable.strings; sourceTree = "<group>"; };
+		2D5E8B1E239897E50008E8C4 /* I18N.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = I18N.swift; sourceTree = "<group>"; };
+		2D5E8B20239898740008E8C4 /* MyStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyStruct.swift; sourceTree = "<group>"; };
+		2D5E8B2323989C3C0008E8C4 /* SdieMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SdieMenu.swift; sourceTree = "<group>"; };
+		2D5E8B272398B5A40008E8C4 /* MenuController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuController.swift; sourceTree = "<group>"; };
+		2D5E8B2C2398B5FE0008E8C4 /* cellMainMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cellMainMenu.swift; sourceTree = "<group>"; };
+		2D5E8B312398DE610008E8C4 /* LabelLocal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelLocal.swift; sourceTree = "<group>"; };
+		2D5E8B362398E5920008E8C4 /* viewMonitorRadon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = viewMonitorRadon.swift; sourceTree = "<group>"; };
+		2D5E8B382398E5B10008E8C4 /* viewMonitorData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = viewMonitorData.swift; sourceTree = "<group>"; };
+		2D5E8B3A2398E7470008E8C4 /* viewSetting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = viewSetting.swift; sourceTree = "<group>"; };
+		2D961D58239F2527002742EB /* viewSaveLogList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = viewSaveLogList.swift; sourceTree = "<group>"; };
+		2D961D5D239F5E29002742EB /* MyFileManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyFileManager.swift; sourceTree = "<group>"; };
+		2D961D62239F7EE1002742EB /* viewSaveLogView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = viewSaveLogView.swift; sourceTree = "<group>"; };
+		2EE011E128E31E4709816A83 /* Pods-RadonEye V2Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RadonEye V2Tests.release.xcconfig"; path = "Target Support Files/Pods-RadonEye V2Tests/Pods-RadonEye V2Tests.release.xcconfig"; sourceTree = "<group>"; };
+		86C561F90554B015F090F9E4 /* Pods_RadonEye_V2Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RadonEye_V2Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		ADE480562E4981980034E580 /* DeviceCategoryManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceCategoryManager.swift; sourceTree = "<group>"; };
+		ADE480582E4981A90034E580 /* CategoryManagementView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryManagementView.swift; sourceTree = "<group>"; };
+		ADE4805A2E4D882B0034E580 /* SavedDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedDataManager.swift; sourceTree = "<group>"; };
+		ADE480602E4EC43F0034E580 /* SavedDataChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedDataChartView.swift; sourceTree = "<group>"; };
+		ADE480612E4EC43F0034E580 /* SavedDataSwiftUIChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedDataSwiftUIChartView.swift; sourceTree = "<group>"; };
+		BF5B9E635A2AF173A89BA406 /* Pods_RadonEye_V2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RadonEye_V2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C36DDAD386D9CEFC5684D2F7 /* Pods-RadonEye V2-RadonEye V2UITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RadonEye V2-RadonEye V2UITests.release.xcconfig"; path = "Target Support Files/Pods-RadonEye V2-RadonEye V2UITests/Pods-RadonEye V2-RadonEye V2UITests.release.xcconfig"; sourceTree = "<group>"; };
+		C588DC311EB86CF8ACB27D26 /* Pods_RadonEye_V2_RadonEye_V2UITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RadonEye_V2_RadonEye_V2UITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E9E88EC6488950BE52AF80F5 /* Pods-RadonEye V2-RadonEye V2UITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RadonEye V2-RadonEye V2UITests.debug.xcconfig"; path = "Target Support Files/Pods-RadonEye V2-RadonEye V2UITests/Pods-RadonEye V2-RadonEye V2UITests.debug.xcconfig"; sourceTree = "<group>"; };
+		EDCFF4BEB6BABE0DDD931F5C /* Pods-RadonEye V2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RadonEye V2.release.xcconfig"; path = "Target Support Files/Pods-RadonEye V2/Pods-RadonEye V2.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		251F47532E131B4800AB99BD /* PBXFileSystemSynchronizedBuildFileExceptionSet */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				"AeonikPro-Bold.otf",
+				"AeonikPro-Light.otf",
+				"AeonikPro-Medium.otf",
+				"AeonikPro-Regular.otf",
+				"AeonikPro-Thin.otf",
+			);
+			target = 2D5E8ACF239888E00008E8C4 /* RadonEye V2 */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		251F47482E131B1F00AB99BD /* Fonts */ = {isa = PBXFileSystemSynchronizedRootGroup; exceptions = (251F47532E131B4800AB99BD /* PBXFileSystemSynchronizedBuildFileExceptionSet */, ); explicitFileTypes = {}; explicitFolders = (); path = Fonts; sourceTree = "<group>"; };
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2D5E8ACD239888E00008E8C4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				251F47662E1F528600AB99BD /* DGCharts in Frameworks */,
+				78595A5DBB0612BE3D1F7344 /* Pods_RadonEye_V2.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2D5E8AE3239888E40008E8C4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F89304E80CA8352BA7D3724B /* Pods_RadonEye_V2Tests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2D5E8AEE239888E40008E8C4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7B0BC9CFF3D961D87C5E9D5D /* Pods_RadonEye_V2_RadonEye_V2UITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2D3DEC8B239A34FD00DFCC2A /* Charts */ = {
+			isa = PBXGroup;
+			children = (
+				2D3DEC8C239A350D00DFCC2A /* BalloonMarker.swift */,
+				2D3DEC8E239A352C00DFCC2A /* chartsControl.swift */,
+			);
+			path = Charts;
+			sourceTree = "<group>";
+		};
+		2D5E8AC7239888E00008E8C4 = {
+			isa = PBXGroup;
+			children = (
+				251F47482E131B1F00AB99BD /* Fonts */,
+				2D5E8AD2239888E00008E8C4 /* RadonEye V2 */,
+				2D5E8AF4239888E40008E8C4 /* RadonEye V2UITests */,
+				2D5E8AD1239888E00008E8C4 /* Products */,
+				35F6DF4F2A6E64318CE26746 /* Pods */,
+				51919D4A8D3A128C0A127158 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		2D5E8AD1239888E00008E8C4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2D5E8AD0239888E00008E8C4 /* RadonEye V2.app */,
+				2D5E8AE6239888E40008E8C4 /* RadonEye V2Tests.xctest */,
+				2D5E8AF1239888E40008E8C4 /* RadonEye V2UITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2D5E8AD2239888E00008E8C4 /* RadonEye V2 */ = {
+			isa = PBXGroup;
+			children = (
+				2D487659288A2E5100E3591C /* RadonEyeV3.bin */,
+				2D15681F26C2434700C46052 /* RadonEye_Quick_Guide.pdf */,
+				2D1BDB0E26AF8586007A73E7 /* GoogleService-Info.plist */,
+				2D3DEC8B239A34FD00DFCC2A /* Charts */,
+				2D5E8B2B2398B5ED0008E8C4 /* CustomCell */,
+				2D5E8B2223989C220008E8C4 /* Side Menu */,
+				2D5E8B1323988DDF0008E8C4 /* Util */,
+				2D5E8B0423988CC90008E8C4 /* BLE */,
+				2D5E8B0323988C3F0008E8C4 /* View */,
+				2D5E8AD3239888E00008E8C4 /* AppDelegate.swift */,
+				2D5E8AD5239888E00008E8C4 /* SceneDelegate.swift */,
+				2D5E8AD9239888E00008E8C4 /* Main.storyboard */,
+				2D2E5BA623A3680D004971B2 /* Menu.storyboard */,
+				2D5E8AE1239888E30008E8C4 /* Info.plist */,
+				2D5E8B1A239896A80008E8C4 /* Localizable.strings */,
+				2D5E8B1E239897E50008E8C4 /* I18N.swift */,
+				2D432BB823A8CFB800028DD0 /* version */,
+				2D5E8ADC239888E30008E8C4 /* Assets.xcassets */,
+				2D4124AF23EBEF12009F0A74 /* Launch Screen.storyboard */,
+			);
+			path = "RadonEye V2";
+			sourceTree = "<group>";
+		};
+		2D5E8AF4239888E40008E8C4 /* RadonEye V2UITests */ = {
+			isa = PBXGroup;
+			children = (
+				2D5E8AF5239888E40008E8C4 /* RadonEye_V2UITests.swift */,
+				2D5E8AF7239888E40008E8C4 /* Info.plist */,
+			);
+			path = "RadonEye V2UITests";
+			sourceTree = "<group>";
+		};
+		2D5E8B0323988C3F0008E8C4 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				ADE480602E4EC43F0034E580 /* SavedDataChartView.swift */,
+				ADE480612E4EC43F0034E580 /* SavedDataSwiftUIChartView.swift */,
+				ADE480582E4981A90034E580 /* CategoryManagementView.swift */,
+				251F475E2E1DCAEB00AB99BD /* DeviceListView.swift */,
+				251F475F2E1DCAEB00AB99BD /* MonitoringView.swift */,
+				251F475A2E132AC800AB99BD /* RadonMonitorView.swift */,
+				251F47582E1327A400AB99BD /* NewMainView.swift */,
+				251F47542E131EE200AB99BD /* WelcomeView.swift */,
+				2D5E8B332398E5010008E8C4 /* TabMonitor */,
+				2D5E8AD7239888E00008E8C4 /* viewDeviceList.swift */,
+				2D5E8B3A2398E7470008E8C4 /* viewSetting.swift */,
+				2D3DEC90239A4EAC00DFCC2A /* viewLanch.swift */,
+				2D961D58239F2527002742EB /* viewSaveLogList.swift */,
+				2D961D62239F7EE1002742EB /* viewSaveLogView.swift */,
+				2D2E5BAB23A36FD7004971B2 /* viewAboutUs.swift */,
+				2D432BB323A8A06A00028DD0 /* viewGetHelp.swift */,
+				2D486A8623C5928D005624F5 /* viewPDF.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		2D5E8B0423988CC90008E8C4 /* BLE */ = {
+			isa = PBXGroup;
+			children = (
+				2D5E8B0823988D230008E8C4 /* Scanner */,
+				2D5E8B0523988CE80008E8C4 /* BLECommnad.swift */,
+				2D5E8B0D23988D720008E8C4 /* BLEData.swift */,
+				2D5E8B0F23988D9D0008E8C4 /* BLEParse.swift */,
+				2D5E8B1123988DC20008E8C4 /* BLEControl.swift */,
+			);
+			path = BLE;
+			sourceTree = "<group>";
+		};
+		2D5E8B0823988D230008E8C4 /* Scanner */ = {
+			isa = PBXGroup;
+			children = (
+				2D5E8B0923988D310008E8C4 /* NORScannedPeripheral.swift */,
+				2D5E8B0B23988D490008E8C4 /* NORScannerDelegate.swift */,
+			);
+			path = Scanner;
+			sourceTree = "<group>";
+		};
+		2D5E8B1323988DDF0008E8C4 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				ADE4805A2E4D882B0034E580 /* SavedDataManager.swift */,
+				ADE480562E4981980034E580 /* DeviceCategoryManager.swift */,
+				251F47622E1E21DC00AB99BD /* DeviceNameManager.swift */,
+				2D5E8B1423988DF40008E8C4 /* MyUtil.swift */,
+				2D5E8B20239898740008E8C4 /* MyStruct.swift */,
+				2D5E8B312398DE610008E8C4 /* LabelLocal.swift */,
+				2D961D5D239F5E29002742EB /* MyFileManager.swift */,
+				2D04204D24639490002B1EC1 /* UILabelExtensions.swift */,
+				2D04204F246394E3002B1EC1 /* UiConstants.swift */,
+				2D0420512463954C002B1EC1 /* UIButtonExtensions.swift */,
+				2D04205324639EF7002B1EC1 /* RulerHorizontalView.swift */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		2D5E8B2223989C220008E8C4 /* Side Menu */ = {
+			isa = PBXGroup;
+			children = (
+				2D5E8B2323989C3C0008E8C4 /* SdieMenu.swift */,
+				2D5E8B272398B5A40008E8C4 /* MenuController.swift */,
+			);
+			path = "Side Menu";
+			sourceTree = "<group>";
+		};
+		2D5E8B2B2398B5ED0008E8C4 /* CustomCell */ = {
+			isa = PBXGroup;
+			children = (
+				2D5E8B2C2398B5FE0008E8C4 /* cellMainMenu.swift */,
+			);
+			path = CustomCell;
+			sourceTree = "<group>";
+		};
+		2D5E8B332398E5010008E8C4 /* TabMonitor */ = {
+			isa = PBXGroup;
+			children = (
+				2D432B8623A719E300028DD0 /* viewTabTop.swift */,
+				2D5E8B362398E5920008E8C4 /* viewMonitorRadon.swift */,
+				2D5E8B382398E5B10008E8C4 /* viewMonitorData.swift */,
+				2D04204924639443002B1EC1 /* PopupRadonLevel.swift */,
+			);
+			path = TabMonitor;
+			sourceTree = "<group>";
+		};
+		35F6DF4F2A6E64318CE26746 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0A2A6A3F70596C0C1256C492 /* Pods-RadonEye V2.debug.xcconfig */,
+				EDCFF4BEB6BABE0DDD931F5C /* Pods-RadonEye V2.release.xcconfig */,
+				E9E88EC6488950BE52AF80F5 /* Pods-RadonEye V2-RadonEye V2UITests.debug.xcconfig */,
+				C36DDAD386D9CEFC5684D2F7 /* Pods-RadonEye V2-RadonEye V2UITests.release.xcconfig */,
+				086AF64BC809632C40C37490 /* Pods-RadonEye V2Tests.debug.xcconfig */,
+				2EE011E128E31E4709816A83 /* Pods-RadonEye V2Tests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		51919D4A8D3A128C0A127158 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BF5B9E635A2AF173A89BA406 /* Pods_RadonEye_V2.framework */,
+				C588DC311EB86CF8ACB27D26 /* Pods_RadonEye_V2_RadonEye_V2UITests.framework */,
+				86C561F90554B015F090F9E4 /* Pods_RadonEye_V2Tests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2D5E8ACF239888E00008E8C4 /* RadonEye V2 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2D5E8AFA239888E40008E8C4 /* Build configuration list for PBXNativeTarget "RadonEye V2" */;
+			buildPhases = (
+				A85621E1E840AC1073FB126E /* [CP] Check Pods Manifest.lock */,
+				2D5E8ACC239888E00008E8C4 /* Sources */,
+				2D5E8ACD239888E00008E8C4 /* Frameworks */,
+				2D5E8ACE239888E00008E8C4 /* Resources */,
+				2D3DEC8A239A348F00DFCC2A /* Embed Frameworks */,
+				2D3E4C5023EBE19C008C9F6A /* ShellScript */,
+				FCCFF538553F40152600EB30 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "RadonEye V2";
+			productName = "RadonEye V2";
+			productReference = 2D5E8AD0239888E00008E8C4 /* RadonEye V2.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2D5E8AE5239888E40008E8C4 /* RadonEye V2Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2D5E8AFD239888E40008E8C4 /* Build configuration list for PBXNativeTarget "RadonEye V2Tests" */;
+			buildPhases = (
+				B0EA54B7FD2BAB3937D254E0 /* [CP] Check Pods Manifest.lock */,
+				2D5E8AE2239888E40008E8C4 /* Sources */,
+				2D5E8AE3239888E40008E8C4 /* Frameworks */,
+				2D5E8AE4239888E40008E8C4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2D5E8AE8239888E40008E8C4 /* PBXTargetDependency */,
+			);
+			name = "RadonEye V2Tests";
+			productName = "RadonEye V2Tests";
+			productReference = 2D5E8AE6239888E40008E8C4 /* RadonEye V2Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		2D5E8AF0239888E40008E8C4 /* RadonEye V2UITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2D5E8B00239888E40008E8C4 /* Build configuration list for PBXNativeTarget "RadonEye V2UITests" */;
+			buildPhases = (
+				5730494E7725D8E8AA903B30 /* [CP] Check Pods Manifest.lock */,
+				2D5E8AED239888E40008E8C4 /* Sources */,
+				2D5E8AEE239888E40008E8C4 /* Frameworks */,
+				2D5E8AEF239888E40008E8C4 /* Resources */,
+				5D6491503CD37C5C14C2F30B /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2D5E8AF3239888E40008E8C4 /* PBXTargetDependency */,
+			);
+			name = "RadonEye V2UITests";
+			productName = "RadonEye V2UITests";
+			productReference = 2D5E8AF1239888E40008E8C4 /* RadonEye V2UITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2D5E8AC8239888E00008E8C4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1120;
+				LastUpgradeCheck = 1120;
+				ORGANIZATIONNAME = "jung sukhwan";
+				TargetAttributes = {
+					2D5E8ACF239888E00008E8C4 = {
+						CreatedOnToolsVersion = 11.2;
+					};
+					2D5E8AE5239888E40008E8C4 = {
+						CreatedOnToolsVersion = 11.2;
+						TestTargetID = 2D5E8ACF239888E00008E8C4;
+					};
+					2D5E8AF0239888E40008E8C4 = {
+						CreatedOnToolsVersion = 11.2;
+						TestTargetID = 2D5E8ACF239888E00008E8C4;
+					};
+				};
+			};
+			buildConfigurationList = 2D5E8ACB239888E00008E8C4 /* Build configuration list for PBXProject "RadonEye V2" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				ko,
+			);
+			mainGroup = 2D5E8AC7239888E00008E8C4;
+			packageReferences = (
+				251F47642E1F528600AB99BD /* XCRemoteSwiftPackageReference "Charts" */,
+			);
+			productRefGroup = 2D5E8AD1239888E00008E8C4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2D5E8ACF239888E00008E8C4 /* RadonEye V2 */,
+				2D5E8AE5239888E40008E8C4 /* RadonEye V2Tests */,
+				2D5E8AF0239888E40008E8C4 /* RadonEye V2UITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2D5E8ACE239888E00008E8C4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2D2E5BA723A3680D004971B2 /* Menu.storyboard in Resources */,
+				2D15682026C2434700C46052 /* RadonEye_Quick_Guide.pdf in Resources */,
+				2D432BB923A8CFB800028DD0 /* version in Resources */,
+				2D5E8B18239896A80008E8C4 /* Localizable.strings in Resources */,
+				2D5E8ADD239888E30008E8C4 /* Assets.xcassets in Resources */,
+				2D4124AD23EBEF12009F0A74 /* Launch Screen.storyboard in Resources */,
+				2D1BDB0F26AF8586007A73E7 /* GoogleService-Info.plist in Resources */,
+				2D5E8ADB239888E00008E8C4 /* Main.storyboard in Resources */,
+				2D48765A288A2E5100E3591C /* RadonEyeV3.bin in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2D5E8AE4239888E40008E8C4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2D5E8AEF239888E40008E8C4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2D3E4C5023EBE19C008C9F6A /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/$(BUILT_PRODUCTS_DIR)/$(INFOPLIST_PATH)",
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "
+";
+		};
+		5730494E7725D8E8AA903B30 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RadonEye V2-RadonEye V2UITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5D6491503CD37C5C14C2F30B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RadonEye V2-RadonEye V2UITests/Pods-RadonEye V2-RadonEye V2UITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RadonEye V2-RadonEye V2UITests/Pods-RadonEye V2-RadonEye V2UITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RadonEye V2-RadonEye V2UITests/Pods-RadonEye V2-RadonEye V2UITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A85621E1E840AC1073FB126E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RadonEye V2-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B0EA54B7FD2BAB3937D254E0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RadonEye V2Tests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FCCFF538553F40152600EB30 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RadonEye V2/Pods-RadonEye V2-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RadonEye V2/Pods-RadonEye V2-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RadonEye V2/Pods-RadonEye V2-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2D5E8ACC239888E00008E8C4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2D04204E24639490002B1EC1 /* UILabelExtensions.swift in Sources */,
+				2D5E8AD8239888E00008E8C4 /* viewDeviceList.swift in Sources */,
+				2D2E5BAC23A36FD7004971B2 /* viewAboutUs.swift in Sources */,
+				2D5E8B0623988CE80008E8C4 /* BLECommnad.swift in Sources */,
+				251F47602E1DCAEB00AB99BD /* DeviceListView.swift in Sources */,
+				ADE480572E4981980034E580 /* DeviceCategoryManager.swift in Sources */,
+				251F47612E1DCAEB00AB99BD /* MonitoringView.swift in Sources */,
+				2D3DEC91239A4EAC00DFCC2A /* viewLanch.swift in Sources */,
+				2D5E8B2423989C3C0008E8C4 /* SdieMenu.swift in Sources */,
+				2D5E8AD4239888E00008E8C4 /* AppDelegate.swift in Sources */,
+				251F47572E131EE200AB99BD /* WelcomeView.swift in Sources */,
+				251F47592E1327A400AB99BD /* NewMainView.swift in Sources */,
+				2D5E8B0A23988D310008E8C4 /* NORScannedPeripheral.swift in Sources */,
+				251F475B2E132AC800AB99BD /* RadonMonitorView.swift in Sources */,
+				2D3DEC8F239A352C00DFCC2A /* chartsControl.swift in Sources */,
+				ADE4805B2E4D882B0034E580 /* SavedDataManager.swift in Sources */,
+				251F47632E1E21DC00AB99BD /* DeviceNameManager.swift in Sources */,
+				2D0420522463954C002B1EC1 /* UIButtonExtensions.swift in Sources */,
+				2D5E8B21239898740008E8C4 /* MyStruct.swift in Sources */,
+				2D5E8B322398DE610008E8C4 /* LabelLocal.swift in Sources */,
+				2D432B8723A719E300028DD0 /* viewTabTop.swift in Sources */,
+				2D961D63239F7EE1002742EB /* viewSaveLogView.swift in Sources */,
+				ADE480592E4981A90034E580 /* CategoryManagementView.swift in Sources */,
+				2D04205424639EF7002B1EC1 /* RulerHorizontalView.swift in Sources */,
+				ADE480622E4EC43F0034E580 /* SavedDataSwiftUIChartView.swift in Sources */,
+				ADE480632E4EC43F0034E580 /* SavedDataChartView.swift in Sources */,
+				2D5E8AD6239888E00008E8C4 /* SceneDelegate.swift in Sources */,
+				2D5E8B2D2398B5FE0008E8C4 /* cellMainMenu.swift in Sources */,
+				2D5E8B1F239897E50008E8C4 /* I18N.swift in Sources */,
+				2D432BB423A8A06A00028DD0 /* viewGetHelp.swift in Sources */,
+				2D5E8B282398B5A40008E8C4 /* MenuController.swift in Sources */,
+				2D5E8B372398E5920008E8C4 /* viewMonitorRadon.swift in Sources */,
+				2D5E8B392398E5B10008E8C4 /* viewMonitorData.swift in Sources */,
+				2D3DEC8D239A350D00DFCC2A /* BalloonMarker.swift in Sources */,
+				2D5E8B1523988DF40008E8C4 /* MyUtil.swift in Sources */,
+				2D486A8723C5928D005624F5 /* viewPDF.swift in Sources */,
+				2D5E8B1223988DC20008E8C4 /* BLEControl.swift in Sources */,
+				2D5E8B0E23988D720008E8C4 /* BLEData.swift in Sources */,
+				2D961D5E239F5E29002742EB /* MyFileManager.swift in Sources */,
+				2D042050246394E3002B1EC1 /* UiConstants.swift in Sources */,
+				2D5E8B3B2398E7470008E8C4 /* viewSetting.swift in Sources */,
+				2D5E8B0C23988D490008E8C4 /* NORScannerDelegate.swift in Sources */,
+				2D961D59239F2528002742EB /* viewSaveLogList.swift in Sources */,
+				2D04204A24639443002B1EC1 /* PopupRadonLevel.swift in Sources */,
+				2D5E8B1023988D9D0008E8C4 /* BLEParse.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2D5E8AE2239888E40008E8C4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2D5E8AED239888E40008E8C4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2D5E8AF6239888E40008E8C4 /* RadonEye_V2UITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2D5E8AE8239888E40008E8C4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2D5E8ACF239888E00008E8C4 /* RadonEye V2 */;
+			targetProxy = 2D5E8AE7239888E40008E8C4 /* PBXContainerItemProxy */;
+		};
+		2D5E8AF3239888E40008E8C4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2D5E8ACF239888E00008E8C4 /* RadonEye V2 */;
+			targetProxy = 2D5E8AF2239888E40008E8C4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		2D4124AF23EBEF12009F0A74 /* Launch Screen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2D4124AE23EBEF12009F0A74 /* Base */,
+				2D4124B323EBEF30009F0A74 /* ko */,
+				2D4124B523EBEF33009F0A74 /* en */,
+			);
+			name = "Launch Screen.storyboard";
+			sourceTree = "<group>";
+		};
+		2D5E8AD9239888E00008E8C4 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2D5E8ADA239888E00008E8C4 /* Base */,
+				2D5E8B1B239896FB0008E8C4 /* ko */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		2D5E8B1A239896A80008E8C4 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2D5E8B19239896A80008E8C4 /* en */,
+				2D5E8B1D239896FB0008E8C4 /* ko */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2D5E8AF8239888E40008E8C4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		2D5E8AF9239888E40008E8C4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2D5E8AFB239888E40008E8C4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0A2A6A3F70596C0C1256C492 /* Pods-RadonEye V2.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 34;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_ASSET_PATHS = "";
+				DEVELOPMENT_TEAM = 7NXG6736FF;
+				INFOPLIST_FILE = "RadonEye V2/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = Testing;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.5.1;
+				PRODUCT_BUNDLE_IDENTIFIER = testing.radon;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2D5E8AFC239888E40008E8C4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EDCFF4BEB6BABE0DDD931F5C /* Pods-RadonEye V2.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 34;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_ASSET_PATHS = "";
+				DEVELOPMENT_TEAM = 7NXG6736FF;
+				INFOPLIST_FILE = "RadonEye V2/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = Testing;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.5.1;
+				PRODUCT_BUNDLE_IDENTIFIER = testing.radon;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		2D5E8AFE239888E40008E8C4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 086AF64BC809632C40C37490 /* Pods-RadonEye V2Tests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = X74L4C3HM5;
+				INFOPLIST_FILE = "RadonEye V2Tests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "ftlab.radoneyev2.RadonEye-V2Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RadonEye V2.app/RadonEye V2";
+			};
+			name = Debug;
+		};
+		2D5E8AFF239888E40008E8C4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2EE011E128E31E4709816A83 /* Pods-RadonEye V2Tests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = X74L4C3HM5;
+				INFOPLIST_FILE = "RadonEye V2Tests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "ftlab.radoneyev2.RadonEye-V2Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RadonEye V2.app/RadonEye V2";
+			};
+			name = Release;
+		};
+		2D5E8B01239888E40008E8C4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E9E88EC6488950BE52AF80F5 /* Pods-RadonEye V2-RadonEye V2UITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = X74L4C3HM5;
+				INFOPLIST_FILE = "RadonEye V2UITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "ftlab.radoneyev2.RadonEye-V2UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "RadonEye V2";
+			};
+			name = Debug;
+		};
+		2D5E8B02239888E40008E8C4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C36DDAD386D9CEFC5684D2F7 /* Pods-RadonEye V2-RadonEye V2UITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = X74L4C3HM5;
+				INFOPLIST_FILE = "RadonEye V2UITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "ftlab.radoneyev2.RadonEye-V2UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "RadonEye V2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D5E8ACB239888E00008E8C4 /* Build configuration list for PBXProject "RadonEye V2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2D5E8AF8239888E40008E8C4 /* Debug */,
+				2D5E8AF9239888E40008E8C4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D5E8AFA239888E40008E8C4 /* Build configuration list for PBXNativeTarget "RadonEye V2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2D5E8AFB239888E40008E8C4 /* Debug */,
+				2D5E8AFC239888E40008E8C4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D5E8AFD239888E40008E8C4 /* Build configuration list for PBXNativeTarget "RadonEye V2Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2D5E8AFE239888E40008E8C4 /* Debug */,
+				2D5E8AFF239888E40008E8C4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D5E8B00239888E40008E8C4 /* Build configuration list for PBXNativeTarget "RadonEye V2UITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2D5E8B01239888E40008E8C4 /* Debug */,
+				2D5E8B02239888E40008E8C4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		251F47642E1F528600AB99BD /* XCRemoteSwiftPackageReference "Charts" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ChartsOrg/Charts";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.1.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		251F47652E1F528600AB99BD /* DGCharts */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 251F47642E1F528600AB99BD /* XCRemoteSwiftPackageReference "Charts" */;
+			productName = DGCharts;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 2D5E8AC8239888E00008E8C4 /* Project object */;
+}
