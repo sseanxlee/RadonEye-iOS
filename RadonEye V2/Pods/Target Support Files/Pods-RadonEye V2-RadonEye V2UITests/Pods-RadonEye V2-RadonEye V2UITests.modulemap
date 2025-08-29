@@ -1,0 +1,6 @@
+framework module Pods_RadonEye_V2_RadonEye_V2UITests {
+  umbrella header "Pods-RadonEye V2-RadonEye V2UITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

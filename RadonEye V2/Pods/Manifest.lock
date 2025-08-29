@@ -1,0 +1,20 @@
+PODS:
+  - SideMenu (6.4.9)
+  - XLPagerTabStrip (9.1.0)
+
+DEPENDENCIES:
+  - SideMenu (~> 6.4.8)
+  - XLPagerTabStrip (~> 9.0)
+
+SPEC REPOS:
+  trunk:
+    - SideMenu
+    - XLPagerTabStrip
+
+SPEC CHECKSUMS:
+  SideMenu: 8ef57a3cfc024a2d3fc1c036c7fe98537baec9e0
+  XLPagerTabStrip: 27f3bfe23c53b4251c6481b06b1c289458a3fc1d
+
+PODFILE CHECKSUM: ec81fce73df8c1478ae99016421434c8a6d72fc8
+
+COCOAPODS: 1.15.2
